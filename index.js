@@ -45,8 +45,8 @@ class RestartServerPlugin {
     if (options.name) {
       name = options.name;
       if (!compilation.assets[name]) {
-        console.error(
-          '\nEntry ' + name + ' not found. Try one of: ' + names.join(' ') + '\n'
+        throw new Error(
+          'Entry ' + name + ' not found. Try one of: ' + names.join(' ')
         );
       }
     } else {
@@ -59,6 +59,8 @@ class RestartServerPlugin {
             names.join(' ') +
             '\n'
         );
+      } else if (names.length == 0) {
+        throw new Error('No compilation entries found!');
       }
     }
     const {existsAt} = compilation.assets[name];
