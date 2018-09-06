@@ -13,6 +13,9 @@
     "middleware",
     "webpack"
   ],
+  "files": [
+    "index.js"
+  ],
   "author": "Dustin J. Mitchell <dustin@mozilla.com>",
   "license": "MIT",
   "peerDependencies": {
