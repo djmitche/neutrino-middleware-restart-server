@@ -1,6 +1,6 @@
 {
   "name": "neutrino-middleware-restart-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Neutrino middleware for restarting a server on each rebuild.",
   "main": "index.js",
   "repository": {
