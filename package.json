@@ -1,0 +1,21 @@
+{
+  "name": "neutrino-middleware-restart-server",
+  "version": "1.0.0",
+  "description": "Neutrino middleware for restarting a server on each rebuild.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djmitche/neutrino-middleware-restart-server.git"
+  },
+  "keywords": [
+    "neutrino-middleware",
+    "neutrino",
+    "middleware",
+    "webpack"
+  ],
+  "author": "Dustin J. Mitchell <dustin@mozilla.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "neutrino": "^8.0.0"
+  }
+}
